@@ -1,0 +1,22 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Extension build files
+*.zip
+*.crx
+*.pem
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+
+# Node / npm (just in case)
+node_modules/
+npm-debug.log

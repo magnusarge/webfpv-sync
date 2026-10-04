@@ -1,0 +1,22 @@
+{
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoXqILvpWKfyfXDUap6tqdfcS/18uJQ5JoxJVfDfcJtLqxA+DVSsvjKf/qaPIIpxHkiAmVi58wiyoD45/GlZxCjwB1PlFgYLg1tG7qSicx6Hn6sOolI2lvd/FXz95DAqeqtqL3HcJ69hsHWRctpK8H8WgC63cEad+HPBmiRuVNxT+7jCQabLNu4AmuXvheDL62Sdo91Pl5KquG/aP1Wi86IFAQ6AY1ryoOi+lQ8ofxp9uw5hpmQx7JPzZXbOLPI5HwxYfzSSExjrDGTG8j7o2EP03Pyk5FcKkjPTiWjz/n6y08Fnfi6UMxbvsmu7YN8N/rJG0T1Z22K7ULop6LAEXxwIDAQAB",
+  "manifest_version": 3,
+  "name": "WebFPV Sync",
+  "version": "3.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.webfpv.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
